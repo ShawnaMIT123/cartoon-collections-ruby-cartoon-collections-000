@@ -1,8 +1,12 @@
 def roll_call_dwarves(array)
-  array.each_with_index do |name, idx|
+  fullarray.each_with_index do |name, idx|
     puts " #{idx + 1} #{name}"
   end
 end
+
+array[0..((array.size/2)-1)]
+
+
 
 def summon_captain_planet(array)
   array.collect do |call|
@@ -26,7 +30,11 @@ end
 find_the_cheese(['apple', 'gouda', 'banana', 'cheddar'])
 
 def words_with_b(words)
+  words.select do |word|
+    word[0] == 'b' 
+  end
 end
 
 words_with_b(['shawna', 'rishi', 'brad']) # ['brad']
-words_with_b(['shawna', 'birttana'])
+words_with_b(['shawna', 'birttana', 'brad']) # ['birttana', 'brad']
+words_with_b(['shawna', 'rishi']) # []

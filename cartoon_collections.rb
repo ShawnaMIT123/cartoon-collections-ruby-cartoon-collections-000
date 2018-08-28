@@ -1,10 +1,10 @@
 def roll_call_dwarves(array)
-  fullarray.each_with_index do |name, idx|
+  array[0..((array.size/2)-1)].each_with_index do |name, idx|
     puts " #{idx + 1} #{name}"
   end
 end
 
-array[0..((array.size/2)-1)]
+array
 
 
 

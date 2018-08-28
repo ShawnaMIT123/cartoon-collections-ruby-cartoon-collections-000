@@ -28,4 +28,5 @@ find_the_cheese(['apple', 'gouda', 'banana', 'cheddar'])
 def words_with_b(words)
 end
 
-words_with_b(['shawna', 'rishi', 'brad'])
+words_with_b(['shawna', 'rishi', 'brad']) # ['brad']
+words_with_b(['shawna', 'birttana'])

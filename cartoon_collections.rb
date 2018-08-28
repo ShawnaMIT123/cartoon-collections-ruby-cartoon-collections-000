@@ -17,8 +17,15 @@ def long_planeteer_calls(short_words)
 end
 
 def find_the_cheese(array)
-  cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese_types = ["cheddar", "gouda", "camembert", "swiss"]
    array.find do |item|
     cheese_types.include?(item)
   end
 end
+
+find_the_cheese(['apple', 'gouda', 'banana', 'cheddar'])
+
+def words_with_b(words)
+end
+
+words_with_b(['shawna', 'rishi', 'brad'])
